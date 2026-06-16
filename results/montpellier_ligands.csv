@@ -1,0 +1,143 @@
+ID,ACTIVE_LABEL,SMILES,SOL_CD73_INHIB_PERCENT_5uM,SOL_CD73_INHIB_PERCENT_5uM_SD,CELL_CD_73_INHIB_PERCENT_100uM,CELL_CD_73_INHIB_PERCENT_100uM_SD,KI_uM,KI_uM_SD,NOTE
+RR1_Rahimova_2017,False,O=C(CSC1=NC(C2=CC=CN=C2)=NN1CC(NNC(C3=CC(OC)=C(OC)C=C3)=O)=O)NC4=CC=C(OC)C=C4,-14,7,NA,NA,NA,NA,NA
+RR2_Rahimova_2017,True,CC1=CC=C(S(NC2=CC=C(C3=NN=C(SCC(NNC(C4=CC=C(OC)C=C4)=O)=O)N3C5=CC=C(OC)C=C5)C=C2)(=O)=O)C=C1,64,13,NA,NA,4.9,1.7,Mixed mode inhib. alt Ki=1.7 +- 0.2 uM
+RR3_Rahimova_2017,True,C1(C2=CC=C(C3=C(C4=CC=C(C5=CC=CC=C5)C=C4)NC(C6=CNC7=C6C=CC=C7)=N3)C=C2)=CC=CC=C1,93,5,NA,NA,0.53,0.02,NA
+RR4_Rahimova_2017,True,COC1=CC=C(C2=CC(C3=CC=C(OC)C=C3)=NC(SCC(NC4=C(C#N)C(CCCC5)=C5S4)=O)=C2C#N)C=C1,73,4,NA,NA,1.20,0.08,NA
+RR5_Rahimova_2017,False,O=C(C[C@H](NC(OCC1C(C=CC=C2)=C2C3=C1C=CC=C3)=O)C(O)=O)NC(C4=CC=CC=C4)(C5=CC=CC=C5)C6=CC=CC=C6,-10,15,NA,NA,NA,NA,NA
+RR6_Rahimova_2017,True,CC(C=C1)=CC=C1C2=CC(C3=CC=C(OC)C=C3)=C(C#N)C(SCC(NC4=CC=C(C(OC)=O)C=C4)=O)=N2,80,0.5,NA,NA,0.68,0.05,NA
+RR7_Rahimova_2017,True,O[C@@H](C[C@H](N1C(N=CN=C2NC(C3=CC=CC=C3)=O)=C2N=C1)O4)[C@H]4COC(C5=CC=CC=C5)(C6=CC=C(OC)C=C6)C7=CC=CC=C7,56,12,NA,NA,NA,NA,NA
+RR8_A_Rahimova_2017,True,O=C(O[C@@H]1[C@H]([C@@H]([C@@H](COCC2=CC=CC=C2)O1)OCC3=CC=CC=C3)OCC4=CC=CC=C4)C5=CC=C([N+]([O-])=O)C=C5,68,14,NA,NA,17.2,2.5,Two isomers for underspecified anomeric center.
+RR8_B_Rahimova_2017,True,O=C(O[C@H]1[C@H]([C@@H]([C@@H](COCC2=CC=CC=C2)O1)OCC3=CC=CC=C3)OCC4=CC=CC=C4)C5=CC=C([N+]([O-])=O)C=C5,68,14,NA,NA,17.2,2.5,Two isomers for underspecified anomeric center.
+RR9_Rahimova_2017,True,CC(C=C1)=CC=C1C2=NNC3=C2C(C(NCCC4=CC=CC=C4)=O)=CC(C5=CC=C(OCC)C=C5)=N3,65,9,NA,NA,2.7,0.3,NA
+RR10_Rahimova_2017,False,O=S(C1=CC2=C(NC(C3=CC=CC=C3)=N2)C=C1)(N4CC(C(NC5CCC(C)CC5)=O)CCC4)=O,17,13,NA,NA,9.39,0.62,NA
+RR11_Rahimova_2017,True,NC(C=C1)=CC=C1C(N2)=NC(C2=C3)=CC=C3CC4=CC5=C(C=C4)NC(C6=CC=C(N)C=C6)=N5,78,8,NA,NA,6.1,0.6,NA
+RR12_Rahimova_2017,False,O=C(COC1=CC=CC=C1)NCCCC2=NC3=CC=CC=C3N2CCC,-36,1,NA,NA,NA,NA,NA
+RR13_Rahimova_2017,False,ClC1=CC=CC=C1C(N2CCN(C(C3=NN=NN3CCC4=CC=CC=C4)C5=CC=CC=C5Cl)CC2)C6=NN=NN6CCC7=CC=CC=C7,35,2,NA,NA,NA,NA,NA
+RR14_Rahimova_2017,False,CC1=C(NC(C(CN(CC2=NN=NN2CC3=CC=C(OC)C=C3)CCCN4CCOCC4)=C5)=O)C5=C(C)C=C1,-36,4,NA,NA,NA,NA,NA
+RR15_Rahimova_2017,False,FC1=CC=C(C(N(CCCN2CCOCC2)C(CN3N=C(C4=CC(OC)=C(OC)C=C4)N=N3)=O)C(NCC5OCCC5)=O)C=C1,17,0.5,NA,NA,NA,NA,NA
+RR16_Rahimova_2017,True,ClC1=CC=CC(CN2N=NC3=C2C=C(C4CCN(S(C5=CC=C(S(NC6CCCCCC6)(=O)=O)C=C5)(=O)=O)CC4)C=C3O)=C1,63,1,NA,NA,0.46,0.10,Mixed mode inhib. alt Ki=1.7 +- 0.2 uM
+RR17_Rahimova_2017,False,COC(C=C1)=CC=C1N2C(SCC(C3=CC=C(OCC)C=C3)=O)=NN=C2CNC4=CC=C(C(F)(F)F)C=C4,27,6,NA,NA,NA,NA,NA
+RR18_Rahimova_2017,True,CC1=CC=C(O1)C2C(C(NC3=C(C)C=CC=C3)=O)=CN=C(S/C4=C5C(NC6=C\5C=CC=C6)=O)N2C4=O,67,2,NA,NA,1.3,0.4,Non covalent or mixed.
+RR19_Rahimova_2017,False,S=C(NC(C(CC1=CC=CC=C1)N2C(C(C=CC=C3)=C3C2=O)=O)=O)NC(C(CC4=CC=CC=C4)N5C(C(C=CC=C6)=C6C5=O)=O)=O,37,8,NA,NA,NA,NA,NA
+RR20_Rahimova_2017,True,O=C(NC1=NC(C2=CC=C(N(C(C3=CC=C(C)C=C3)=O)CC4)C4=C2)=C(C)S1)CN5CCC6=CC=CC=C6C5,74,1,NA,NA,1.22,0.11,NA
+RR21_Rahimova_2017,True,COC(C(F)=C1)=CC=C1C2=NN(C=C2/C=C3SC(N4C\3=O)=NC(C(CC5=CC=C(C)C=C5)=N4)=O)C6=CC=CC=C6,61,4,NA,NA,NA,NA,Undetermined Ki; solubility
+RR22_Rahimova_2017,False,O=C(N1)S/C(C21N3C(C4=CC=CC=C4O2)CC(C5=CC=CC=C5)=N3)=C\C6=CC=CN=C6,22,5,NA,NA,NA,NA,NA
+RR23_Rahimova_2017,True,O=C1N(CC(NC2=NC(C3=CC=C(N(C(C4=CC=C(C)C=C4)=O)CC5)C5=C3)C(C)S2)=O)N=NC6=CC=CC=C61,56,3,NA,NA,NA,NA,NA
+RR24_Rahimova_2017,False,O=C(N(C)C1=O)NC2=C1C(C3=CC=C(OC(C(N4C(C(C=CC=C5)=C5C4=O)=O)C)=O)C=C3)C(C6=O)=C(N2)C7=C6C=CC=C7,-7,8,NA,NA,NA,NA,NA
+RR25_Rahimova_2017,False,[O-][N+](C1=CC=C(OC(C(C(N2CCN(CCN3C(C4=CC=CC5=CC=CC(C3=O)=C45)=O)CC2)=O)C6)=O)C6=C1)=O,-16,4,NA,NA,NA,NA,NA
+RR26_Rahimova_2017,True,O=C(/C(S1)=C/C(C(C2=CC=C(OCCO3)C3=C2)=N4)=CN4C5=CC=CC=C5)N6C1=NC(C7=CC=CC=C7C)=N6,53,3,NA,NA,NA,NA,NA
+RR27_Rahimova_2017,False,OC1=NC(C2CCN(C(C(C3=CC=CC=C3)C4=CC=CC=C4)=O)CC2)=NC5=C1N=NN5CC6=CC(Cl)=CC=C6,-16,14,NA,NA,NA,NA,NA
+RR28_Rahimova_2017,False,O=C(N1CCC(C2=CC=C(C(F)(F)F)C=C2)(NC(C)=O)CC1)CCC(N3CCC(C4=CC=C(C(F)(F)F)C=C4)(NC(C)=O)CC3)=O,-61,10,NA,NA,NA,NA,NA
+RR29_Rahimova_2017,False,C/C(CCC1=CC(OCO2)=C2C=C1)=N/NC(N)=[NH2+],18,13,NA,NA,NA,NA,NA
+RR30_Rahimova_2017,False,O=C(NC1=NN=C(C)S1)CSC2=NN=C(CC)O2,10,5,NA,NA,NA,NA,NA
+RR31_Rahimova_2017,False,CC1=C(C)C=CC(N2CCN(CCC[NH3+])CC2)=C1,-22,5,NA,NA,NA,NA,NA
+RR32_Rahimova_2017,False,CC1=CC(N2CCN(C)CC2)=NC3=CC=CC=C31,14,8,NA,NA,NA,NA,NA
+RR33_Rahimova_2017,True,CCOC1=CC=C(C2=NC(CNC)=C(C)O2)C=C1,55,12,NA,NA,NA,NA,NA
+1a_Ghoteimi_2023,True,COC(C=C1)=CC=C1C2=C(C#N)C(SCC(NC3=CC=C(C(OCC)=O)C=C3)=O)=NC(C4=CC=C(OC)C=C4)=C2,87,3,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+1b_Ghoteimi_2023,True,COC(C=C1)=CC=C1C2=C(C#N)C(SCC(NC3=NOC=C3)=O)=NC(C4=CC=C(OC)C=C4)=C2,78,0.5,27,7,NA,NA,NA
+1c_Ghoteimi_2023,True,COC(C=C1)=CC=C1C2=C(C#N)C(SCC(NC3=NC=CS3)=O)=NC(C4=CC=C(OC)C=C4)=C2,27,3,22,1,NA,NA,NA
+1d_Ghoteimi_2023,True,COC(C=C1)=CC=C1C2=C(C#N)C(SCC(OC)=O)=NC(C3=CC=C(OC)C=C3)=C2,30,5,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+1aa_Ghoteimi_2023,False,COC1=CC=C(C2=C(C(OCC(NC3=CC=C(C=C3)C(OCC)=O)=O)=NC(C4=CC=C(C=C4)OC)=C2)C#N)C=C1,9,1,32,10,NA,NA,NA
+2a_Ghoteimi_2023,True,N#CC(C(SCC(NC1=CC=C(C=C1)C(OCC)=O)=O)=NC(C2=CC=C(C=C2)N3CCOCC3)=C4)=C4C5=CC=C(C=C5)N6CCOCC6,70,1,37,4,NA,NA,NA
+2b_Ghoteimi_2023,True,N#CC(C(SCC(NC1=NOC=C1)=O)=NC(C2=CC=C(C=C2)N3CCOCC3)=C4)=C4C5=CC=C(C=C5)N6CCOCC6,68,3,44,13,NA,NA,NA
+2c_Ghoteimi_2023,True,N#CC(C(SCC(NC1=NC=CS1)=O)=NC(C2=CC=C(C=C2)N3CCOCC3)=C4)=C4C5=CC=C(C=C5)N6CCOCC6,59,4,35,6,NA,NA,NA
+2d_Ghoteimi_2023,False,N#CC(C(SCC(OC)=O)=NC(C1=CC=C(C=C1)N2CCOCC2)=C3)=C3C4=CC=C(C=C4)N5CCOCC5,-14,10,39,8,NA,NA,NA
+2aa_Ghoteimi_2023,True,N#CC(C(OCC(NC1=CC=C(C=C1)C(OCC)=O)=O)=NC(C2=CC=C(C=C2)N3CCOCC3)=C4)=C4C5=CC=C(C=C5)N6CCOCC6,41,7,49,10,NA,NA,NA
+8a_Ghoteimi_2023,True,COC(C=C1)=CC=C1C2=C3C(SC(C(NC4=CC=C(C(OCC)=O)C=C4)=O)=C3N)=NC(C5=CC=C(OC)C=C5)=C2,53,4,34,7,NA,NA,NA
+8b_Ghoteimi_2023,False,COC(C=C1)=CC=C1C2=C3C(SC(C(NC4=NOC=C4)=O)=C3N)=NC(C5=CC=C(OC)C=C5)=C2,16,5,33,8,NA,NA,NA
+8c_Ghoteimi_2023,True,COC(C=C1)=CC=C1C2=C3C(SC(C(NC4=NC=CS4)=O)=C3N)=NC(C5=CC=C(OC)C=C5)=C2,57,3,45,2,NA,NA,NA
+8d_Ghoteimi_2023,True,COC(C=C1)=CC=C1C2=C3C(SC(C(OC)=O)=C3N)=NC(C4=CC=C(OC)C=C4)=C2,50,8,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+9a_Ghoteimi_2023,True,NC1=C(C(NC2=CC=C(C(OCC)=O)C=C2)=O)SC3=NC(C4=CC=C(N5CCOCC5)C=C4)=CC(C6=CC=C(N7CCOCC7)C=C6)=C31,24,7,3,6,NA,NA,NA
+9b_Ghoteimi_2023,True,NC1=C(C(NC2=NOC=C2)=O)SC3=NC(C4=CC=C(N5CCOCC5)C=C4)=CC(C6=CC=C(N7CCOCC7)C=C6)=C31,42,5,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+9c_Ghoteimi_2023,True,NC1=C(C(NC2=NC=CS2)=O)SC3=NC(C4=CC=C(N5CCOCC5)C=C4)=CC(C6=CC=C(N7CCOCC7)C=C6)=C31,25,4,34,4,NA,NA,NA
+9d_Ghoteimi_2023,False,NC1=C(C(OC)=O)SC2=NC(C3=CC=C(N4CCOCC4)C=C3)=CC(C5=CC=C(N6CCOCC6)C=C5)=C21,-8,8,48,6,NA,NA,NA
+1a_Grossjean_2025,False,CC1=C(C#N)C(SCC(NC2=CC=C(C(OCC)=O)C=C2)=O)=NC(C)=C1,0,3,20,4,NA,NA,NA
+1b_Grossjean_2025,False,CC1=C(C#N)C(SCC(NC2=CC=C(C(OC)=O)C=C2)=O)=NC(C)=C1,-26,5,15,6,NA,NA,NA
+1c_Grossjean_2025,False,CC1=C(C#N)C(SCC(NC2=CC=C(OC)C=C2)=O)=NC(C)=C1,16,7,25,3,NA,NA,NA
+1d_Grossjean_2025,False,CC1=C(C#N)C(SCC(NC2=CC=CC=C2)=O)=NC(C)=C1,-4,6,10,11,NA,NA,NA
+1e_Grossjean_2025,False,CC1=C(C#N)C(SCC(NC2=NC(C)=CC=C2)=O)=NC(C)=C1,-23,8,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+1f_Grossjean_2025,False,CC1=C(C#N)C(SCC(NC2=CN=CC=C2)=O)=NC(C)=C1,5,5,-6,7,NA,NA,NA
+1g_Grossjean_2025,False,CC1=C(C#N)C(SCC(NCC2=CC=CC=C2)=O)=NC(C)=C1,-16,8,3,6,NA,NA,NA
+1h_Grossjean_2025,False,CC1=C(C#N)C(SCC(NCC2=CC(OC)=C(OC)C(OC)=C2)=O)=NC(C)=C1,-14,10,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+1i_Grossjean_2025,False,CC1=C(C#N)C(SCC(NC2=NOC=C2)=O)=NC(C)=C1,3,4,38,10,NA,NA,NA
+1j_Grossjean_2025,True,CC1=C(C#N)C(SCC(NC2=NC=CS2)=O)=NC(C)=C1,27,6,30,3,NA,NA,NA
+1k_Grossjean_2025,False,CC1=C(C#N)C(SCC(NCCOCCOCCOC)=O)=NC(C)=C1,14,4,1,8,NA,NA,NA
+1l_Grossjean_2025,False,CC1=C(C#N)C(SCC(NOC)=O)=NC(C)=C1,-25,12,31,7,NA,NA,NA
+1m_Grossjean_2025,False,CC1=C(C#N)C(SCC(NCC(OC)=O)=O)=NC(C)=C1,-10,1,21,6,NA,NA,NA
+1n_Grossjean_2025,False,CC1=C(C#N)C(SCCC(NC2=CC=C(C(OCC)=O)C=C2)=O)=NC(C)=C1,-5,1,24,2,NA,NA,NA
+1o_Grossjean_2025,True,CC1=C(C#N)C(SCCC(NC2=CC=C(C(OC)=O)C=C2)=O)=NC(C)=C1,25,1,24,8,NA,NA,NA
+1p_Grossjean_2025,True,CC1=C(C#N)C(SCCC(NC2=NOC=C2)=O)=NC(C)=C1,34,6,16,2,NA,NA,NA
+1q_Grossjean_2025,False,CC1=C(C#N)C(SCCC(NCC(OC)=O)=O)=NC(C)=C1,-22,7,31,4,NA,NA,Drawn incorrectly in Table 7
+2a_Grossjean_2025,False,CC1=CC(C(F)(F)F)=C(C#N)C(SCC(NC2=CC=C(C(OCC)=O)C=C2)=O)=N1,20,10,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+2b_Grossjean_2025,False,CC1=CC(C(F)(F)F)=C(C#N)C(SCC(NC2=CC=C(C(OC)=O)C=C2)=O)=N1,12,8,22,10,NA,NA,NA
+2c_Grossjean_2025,False,CC1=CC(C(F)(F)F)=C(C#N)C(SCC(NC2=CC=C(OC)C=C2)=O)=N1,12,6,0,6,NA,NA,NA
+2d_Grossjean_2025,False,CC1=CC(C(F)(F)F)=C(C#N)C(SCC(NC2=CC=CC=C2)=O)=N1,0,3,11,3,NA,NA,NA
+2e_Grossjean_2025,False,CC1=CC(C(F)(F)F)=C(C#N)C(SCC(NC2=NC(C)=CC=C2)=O)=N1,-19,14,28,10,NA,NA,NA
+2f_Grossjean_2025,False,CC1=CC(C(F)(F)F)=C(C#N)C(SCC(NC2=CN=CC=C2)=O)=N1,-25,16,-35,14,NA,NA,NA
+2g_Grossjean_2025,False,CC1=CC(C(F)(F)F)=C(C#N)C(SCC(NCC2=CC=CC=C2)=O)=N1,-2,8,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+2h_Grossjean_2025,False,CC1=CC(C(F)(F)F)=C(C#N)C(SCC(NCC2=C(OC)C(OC)=C(OC)C=C2)=O)=N1,17,9,27,19,NA,NA,NA
+2i_Grossjean_2025,False,CC1=CC(C(F)(F)F)=C(C#N)C(SCC(NC2=NOC=C2)=O)=N1,-38,12,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+2j_Grossjean_2025,True,CC1=CC(C(F)(F)F)=C(C#N)C(SCC(NC2=NC=CS2)=O)=N1,33,11,-2,5,NA,NA,NA
+2k_Grossjean_2025,False,N#CC(C(SCC(NCCOCCOCCOC)=O)=NC(C)=C1)=C1C(F)(F)F,1,4,-1,6,NA,NA,NA
+3bc_Grossjean_2025,True,CC1=C(C#N)C(SCC(NC2=CC=C(OC)C=C2)=O)=NC(C3=CC=CC=C3)=C1,79,4,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+3bd_Grossjean_2025,True,CC1=C(C#N)C(SCC(NC2=CC=CC=C2)=O)=NC(C3=CC=CC=C3)=C1,71,3,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+3be_Grossjean_2025,True,CC1=C(C#N)C(SCC(NC2=NC(C)=CC=C2)=O)=NC(C3=CC=CC=C3)=C1,58,10,27,8,NA,NA,NA
+3bf_Grossjean_2025,True,CC1=C(C#N)C(SCC(NC2=CN=CC=C2)=O)=NC(C3=CC=CC=C3)=C1,35,4,-72,3,NA,NA,NA
+3bg_Grossjean_2025,True,CC1=C(C#N)C(SCC(NCC2=CC=CC=C2)=O)=NC(C3=CC=CC=C3)=C1,47,7,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+3bk_Grossjean_2025,False,CC1=C(C(SCC(NCCOCCOCCOC)=O)=NC(C2=CC=CC=C2)=C1)C#N,0,11,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+3aa_Grossjean_2025,False,N#CC1=C(C(F)(F)F)C=C(C2=CC=CC=C2)N=C1SCC(NC3=CC=C(C(OCC)=O)C=C3)=O,10,5,23,5,NA,NA,NA
+3ab_Grossjean_2025,True,N#CC1=C(C(F)(F)F)C=C(C2=CC=CC=C2)N=C1SCC(NC3=CC=C(C(OC)=O)C=C3)=O,90,9,-69,16,NA,NA,NA
+3ac_Grossjean_2025,True,N#CC1=C(C(F)(F)F)C=C(C2=CC=CC=C2)N=C1SCC(NC3=CC=C(OC)C=C3)=O,85,7,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+3ad_Grossjean_2025,False,N#CC1=C(C(F)(F)F)C=C(C2=CC=CC=C2)N=C1SCC(NC3=CC=CC=C3)=O,16,4,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+3af_Grossjean_2025,True,N#CC1=C(C(F)(F)F)C=C(C2=CC=CC=C2)N=C1SCC(NC3=CN=CC=C3)=O,40,12,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+3ag_Grossjean_2025,True,N#CC1=C(C(F)(F)F)C=C(C2=CC=CC=C2)N=C1SCC(NCC3=CC=CC=C3)=O,30,15,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+3ai_Grossjean_2025,False,N#CC1=C(C(F)(F)F)C=C(C2=CC=CC=C2)N=C1SCC(NC3=NOC=C3)=O,17,4,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+3aj_Grossjean_2025,False,N#CC1=C(C(F)(F)F)C=C(C2=CC=CC=C2)N=C1SCC(NC3=NC=CS3)=O,14,9,22,3,NA,NA,NA
+3ak_Grossjean_2025,False,COCCOCCOCCNC(CSC1=NC(C2=CC=CC=C2)=CC(C(F)(F)F)=C1C#N)=O,-20,9,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+3ca_Grossjean_2025,True,CC1=CC(C2=CC=CC=C2)=C(C#N)C(SCC(NC3=CC=C(C(OCC)=O)C=C3)=O)=N1,56,11,26,6,NA,NA,NA
+3cb_Grossjean_2025,False,CC1=CC(C2=CC=CC=C2)=C(C#N)C(SCC(NC3=CC=C(C(OC)=O)C=C3)=O)=N1,17,4,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+3ch_Grossjean_2025,False,CC1=CC(C2=CC=CC=C2)=C(C#N)C(SCC(NC3=CC(OC)=C(OC)C(OC)=C3)=O)=N1,29,11,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+3ce_Grossjean_2025,True,CC1=CC(C2=CC=CC=C2)=C(C#N)C(SCC(NC3=NC(C)=CC=C3)=O)=N1,98,3,27,9,NA,NA,NA
+3cj_Grossjean_2025,True,CC1=CC(C2=CC=CC=C2)=C(C#N)C(SCC(NC3=NC=CS3)=O)=N1,91,6,26,8,NA,NA,NA
+3ci_Grossjean_2025,False,CC1=CC(C2=CC=CC=C2)=C(C#N)C(SCC(NC3=NOC=C3)=O)=N1,4,1,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+3ck_Grossjean_2025,False,N#CC1=C(C2=CC=CC=C2)C=C(C)N=C1SCC(NCCOCCOCCOC)=O,13,7,8,9,NA,NA,NA
+4aa_Grossjean_2025,False,O=C(NC1=CC=C(C(OCC)=O)C=C1)C2=C(N)C3=C(C)C=C(C)N=C3S2,-57,6,-29,7,NA,NA,NA
+4ab_Grossjean_2025,False,O=C(NC1=CC=C(C(OC)=O)C=C1)C2=C(N)C3=C(C)C=C(C)N=C3S2,-32,5,44,7,NA,NA,NA
+4ac_Grossjean_2025,False,O=C(NC1=CC=C(OC)C=C1)C2=C(N)C3=C(C)C=C(C)N=C3S2,-3,2,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+4ad_Grossjean_2025,False,O=C(NC1=CC=CC=C1)C2=C(N)C3=C(C)C=C(C)N=C3S2,17,4,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+4ae_Grossjean_2025,False,O=C(NC1=NC(C)=CC=C1)C2=C(N)C3=C(C)C=C(C)N=C3S2,-21,8,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+4af_Grossjean_2025,False,O=C(NC1=CN=CC=C1)C2=C(N)C3=C(C)C=C(C)N=C3S2,-23,4,16,6,NA,NA,NA
+4ag_Grossjean_2025,False,O=C(NCC1=CC=CC=C1)C2=C(N)C3=C(C)C=C(C)N=C3S2,-22,6,5,6,NA,NA,NA
+4ah_Grossjean_2025,False,O=C(NCC1=CC(OC)=C(OC)C(OC)=C1)C2=C(N)C3=C(C)C=C(C)N=C3S2,-23,8,-9,14,NA,NA,NA
+4ai_Grossjean_2025,False,O=C(NC1=NOC=C1)C2=C(N)C3=C(C)C=C(C)N=C3S2,-20,9,46,4,NA,NA,NA
+4aj_Grossjean_2025,False,O=C(NC1=NC=CS1)C2=C(N)C3=C(C)C=C(C)N=C3S2,-10,4,-1,3,NA,NA,NA
+4ak_Grossjean_2025,False,O=C(NCCOCCOCCOC)C1=C(N)C2=C(C)C=C(C)N=C2S1,-1,9,-3,7,NA,NA,NA
+4al_Grossjean_2025,False,O=C(OC)C1=C(N)C2=C(C)C=C(C)N=C2S1,6,2,38,7,NA,NA,NA
+4ba_Grossjean_2025,True,O=C(NC1=CC=C(C(CC)=O)C=C1)C2=C(N)C3=C(C(F)(F)F)C=C(C)N=C3S2,41,3,2,2,NA,NA,NA
+4bb_Grossjean_2025,True,O=C(NC1=CC=C(C(C)=O)C=C1)C2=C(N)C3=C(C(F)(F)F)C=C(C)N=C3S2,47,7,11,6,NA,NA,NA
+4bc_Grossjean_2025,False,O=C(NC1=CC=C(OC)C=C1)C2=C(N)C3=C(C(F)(F)F)C=C(C)N=C3S2,23,9,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+4bd_Grossjean_2025,True,O=C(NC1=CC=CC=C1)C2=C(N)C3=C(C(F)(F)F)C=C(C)N=C3S2,58,4,19,5,NA,NA,NA
+4be_Grossjean_2025,True,O=C(NC1=NC(C)=CC=C1)C2=C(N)C3=C(C(F)(F)F)C=C(C)N=C3S2,32,4,33,9,NA,NA,NA
+4bf_Grossjean_2025,False,O=C(NC1=CN=CC=C1)C2=C(N)C3=C(C(F)(F)F)C=C(C)N=C3S2,0,8,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+4bg_Grossjean_2025,True,O=C(NCC1=CC=CC=C1)C2=C(N)C3=C(C(F)(F)F)C=C(C)N=C3S2,30,13,22,7,NA,NA,NA
+4bh_Grossjean_2025,False,O=C(NCC1=CC(OC)=C(OC)C(OC)=C1)C2=C(N)C3=C(C(F)(F)F)C=C(C)N=C3S2,22,11,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+4bi_Grossjean_2025,False,O=C(NC1=NOC=C1)C2=C(N)C3=C(C(F)(F)F)C=C(C)N=C3S2,-18,7,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+4bj_Grossjean_2025,False,O=C(NC1=NC=CS1)C2=C(N)C3=C(C(F)(F)F)C=C(C)N=C3S2,NA,NA,9,6,NA,NA,Undetermined recombinant inhibition; solubility
+4bk_Grossjean_2025,False,O=C(C1=C(C2=C(C=C(N=C2S1)C)C(F)(F)F)N)NCCOCCOCCOC,11,8,3,3,NA,NA,NA
+4dd_Grossjean_2025,False,O=C(NC1=CC=CC=C1)C2=C(N)C3=C(C)C=C(C4=CC=CC=C4)N=C3S2,3,9,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+4dg_Grossjean_2025,False,O=C(NCC1=CC=CC=C1)C2=C(N)C3=C(C)C=C(C4=CC=CC=C4)N=C3S2,4,5,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+4dj_Grossjean_2025,False,O=C(NC1=NC=CS1)C2=C(N)C3=C(C)C=C(C4=CC=CC=C4)N=C3S2,NA,NA,8,3,NA,NA,Undetermined recombinant inhibition; solubility
+4ea_Grossjean_2025,False,O=C(NC1=CC=C(C(OCC)=O)C=C1)C2=C(N)C3=C(C4=CC=CC=C4)C=C(C)N=C3S2,-21,11,32,5,NA,NA,NA
+4eb_Grossjean_2025,False,O=C(NC1=CC=C(C(OC)=O)C=C1)C2=C(N)C3=C(C4=CC=CC=C4)C=C(C)N=C3S2,-20,12,25,10,NA,NA,NA
+4ca_Grossjean_2025,True,O=C(NC1=CC=C(C(OCC)=O)C=C1)C2=C(N)C3=C(C(F)(F)F)C=C(C4=CC=CC=C4)N=C3S2,92,2,24,1,NA,NA,NA
+4cb_Grossjean_2025,True,O=C(NC1=CC=C(C(OC)=O)C=C1)C2=C(N)C3=C(C(F)(F)F)C=C(C4=CC=CC=C4)N=C3S2,94,3,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+4cc_Grossjean_2025,True,O=C(NC1=CC=C(OC)C=C1)C2=C(N)C3=C(C(F)(F)F)C=C(C4=CC=CC=C4)N=C3S2,92,6,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+4cd_Grossjean_2025,False,O=C(NC1=CC=CC=C1)C2=C(N)C3=C(C(F)(F)F)C=C(C4=CC=CC=C4)N=C3S2,10,9,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+4ce_Grossjean_2025,True,O=C(NC1=NC(C)=CC=C1)C2=C(N)C3=C(C(F)(F)F)C=C(C4=CC=CC=C4)N=C3S2,39,17,20,8,NA,NA,NA
+4cf_Grossjean_2025,True,O=C(NC1=CN=CC=C1)C2=C(N)C3=C(C(F)(F)F)C=C(C4=CC=CC=C4)N=C3S2,73,14,20,3,NA,NA,NA
+4cg_Grossjean_2025,False,O=C(NCC1=CC=CC=C1)C2=C(N)C3=C(C(F)(F)F)C=C(C4=CC=CC=C4)N=C3S2,15,1,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+4ch_Grossjean_2025,False,O=C(NCC1=CC(OC)=C(OC)C(OC)=C1)C2=C(N)C3=C(C(F)(F)F)C=C(C4=CC=CC=C4)N=C3S2,-8,10,NA,NA,NA,NA,NA
+4ci_Grossjean_2025,True,O=C(NC1=NOC=C1)C2=C(N)C3=C(C(F)(F)F)C=C(C4=CC=CC=C4)N=C3S2,62,4,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+4cj_Grossjean_2025,False,O=C(NC1=NC=CS1)C2=C(N)C3=C(C(F)(F)F)C=C(C4=CC=CC=C4)N=C3S2,8,3,16,7,NA,NA,NA
+4ck_Grossjean_2025,False,O=C(NCCOCCOCCOC)C1=C(N)C2=C(C(F)(F)F)C=C(C3=CC=CC=C3)N=C2S1,-9,8,NA,NA,NA,NA,Undetermined cell inhibition; solubility
+
