@@ -1,0 +1,429 @@
+--------------------------------------------------------------------------------
+JobId          : galba-0-69e5fd57
+Name           : montpellier_ligands_ligprep
+Program        : LigPrep
+Version        : 2025-3 build 160
+Host           : galba.lacdr.leidenuniv.nl
+Dir            : /home/s2004267/docking_hts/CD73
+HostEntry      : localhost
+JobHost        : galba.lacdr.leidenuniv.nl
+JobDir         : /usr/tmp/s2004267/montpellier_ligands_ligprep
+JobSchrodinger : /zfsdata/software/schrodinger/2025-3
+Commandline    : /zfsdata/software/schrodinger/2025-3/ligprep -retain ic -ma 500 -bff 16 -epik -s 1 -t 1 -ismi montpellier_ligands.smi -osd montpellier_ligands_ligprep.sdf -HOST localhost:8 -NJOBS 5 -ph 7.4 -pht 0.2
+StartTime      : 2026-04-20-12:18:00
+--------------------------------------------------------------------------------
+LigPrep: preparing subjobs
+
+Running subjobs on hosts:
+  localhost (Max: 8)
+Number of jobs:       5
+Max retries per job:  2
+Max allowed failures: unlimited
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 4 | launched  galba-0-69e5fd5a montpellier_ligands_ligprep-1 localhost [galba]
+0 2 3 | launched  galba-0-69e5fd5b montpellier_ligands_ligprep-2 localhost [galba]
+0 3 2 | launched  galba-0-69e5fd5c montpellier_ligands_ligprep-3 localhost [galba]
+0 4 1 | launched  galba-0-69e5fd5e montpellier_ligands_ligprep-4 localhost [galba]
+0 5 0 | launched  galba-0-69e5fd5f montpellier_ligands_ligprep-5 localhost [galba]
+1 4 0 | finished  galba-0-69e5fd5c montpellier_ligands_ligprep-3 localhost [galba]
+2 3 0 | finished  galba-0-69e5fd5f montpellier_ligands_ligprep-5 localhost [galba]
+3 2 0 | finished  galba-0-69e5fd5e montpellier_ligands_ligprep-4 localhost [galba]
+4 1 0 | finished  galba-0-69e5fd5b montpellier_ligands_ligprep-2 localhost [galba]
+5 0 0 | finished  galba-0-69e5fd5a montpellier_ligands_ligprep-1 localhost [galba]
+
+All jobs have completed.
+
+5 of 5 job(s) succeeded; 0 job(s) failed.
+
+--------------------------------------------------------------------------------
+SUBJOB: montpellier_ligands_ligprep-1
+
+
+--------------------------------------------------------------------------------
+JobId          : galba-0-69e5fd5a
+Name           : montpellier_ligands_ligprep-1
+Program        : LigPrep
+Version        : 2025-3 build 160
+Host           : galba.lacdr.leidenuniv.nl
+Dir            : /var/tmp/s2004267/montpellier_ligands_ligprep
+HostEntry      : localhost
+JobHost        : galba.lacdr.leidenuniv.nl
+JobDir         : /usr/tmp/s2004267/montpellier_ligands_ligprep-1
+JobSchrodinger : /zfsdata/software/schrodinger/2025-3
+Commandline    : /zfsdata/software/schrodinger/2025-3/ligprep -retain ic -ma 500 -bff 16 -epik -s 1 -t 1 -ph 7.4 -pht 0.2 -orig_file montpellier_ligands.smi -orig_file_index 1 -ismi in_montpellier_ligands_ligprep-1.smi -osd montpellier_ligands_ligprep-1.sdf -HOST localhost
+StartTime      : 2026-04-20-12:18:02
+--------------------------------------------------------------------------------
+WARNING: Will not retain stereochemistry because -ac is not specified.
+LigPrep (version 75160). Copyright Schrodinger, LLC. All rights reserved.
+
+LigPrep command:
+$SCHRODINGER/ligprep -retain ic -ma 500 -bff 16 -epik -s 1 -t 1 -ph 7.4 -pht 0.2 -orig_file montpellier_ligands.smi -orig_file_index 1 -ismi in_montpellier_ligands_ligprep-1.smi -osd montpellier_ligands_ligprep-1.sdf
+
+Processing steps:
+$DO.smiconvert_in -orig_file_index 0 -orig_file montpellier_ligands.smi -max_atom 500 in_montpellier_ligands_ligprep-1.smi
+$DO.sdstereoexpander -add_hydrogens -max_output 1 -max_generated 32 <infile.mae> <outfile.mae>
+$DO.htreat -t All-None -a all -s -l 500 <infile.mae> <outfile.mae>
+$DO.desalter <infile.mae> <outfile.mae>
+$DO.neutralizer -retain_lab -m 500 <infile.mae> <outfile.mae>
+$DO.guard <infile.mae> <outfile.mae>
+$DO.epik.py -pht 0.2 -ph 7.4 -retain_i_lab -retain_t_lab -tn 1 -ma 500 -imae <infile.mae> -omae <outfile.mae>
+$DO.stereoizer -label_specified_chiralities -n 1 <infile.mae> <outfile.mae>
+$DO.lp_noredund <infile.mae> <outfile.mae>
+$DO.cgx -optimize -ffld 16 -epsilon 10.0 <infile.mae> <outfile.mae>
+$DO.filterstereo -max_stereo 1 <infile.mae> <outfile.mae>
+
+DO=$SCHRODINGER/run python3 -m schrodinger.application.macromodel.packages.ligprep3
+
+# counts of output and dropped structures after processing steps
+# index  sdstex  htreat  desalt  neutra   guard   epik   stereo  redund    cgx   filter  title
+       1   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   'RR1_Rahimova_2017'
+       2   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   'RR2_Rahimova_2017'
+       3   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   'RR3_Rahimova_2017'
+       4   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   'RR4_Rahimova_2017'
+       5   1/0     1/0     1/0     1/0     1/0     2/0     2/0     2/0     2/0     2/0   'RR5_Rahimova_2017'
+       6   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   'RR6_Rahimova_2017'
+       7   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   'RR7_Rahimova_2017'
+       8   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   'RR8_A_Rahimova_2017'
+       9   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   'RR8_B_Rahimova_2017'
+      10   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   'RR9_Rahimova_2017'
+      11   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   'RR10_Rahimova_2017'
+      12   1/0     1/0     1/0     1/0     1/0     3/0     3/0     3/0     3/0     3/0   'RR11_Rahimova_2017'
+      13   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   'RR12_Rahimova_2017'
+      14   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   'RR13_Rahimova_2017'
+      15   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   'RR14_Rahimova_2017'
+      16   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   'RR15_Rahimova_2017'
+      17   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   'RR16_Rahimova_2017'
+      18   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   'RR17_Rahimova_2017'
+      19   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   'RR18_Rahimova_2017'
+      20   1/0     1/0     1/0     1/0     1/0     2/0     2/0     2/0     2/0     2/0   'RR19_Rahimova_2017'
+      21   1/0     1/0     1/0     1/0     1/0     2/0     2/0     2/0     2/0     2/0   'RR20_Rahimova_2017'
+      22   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   'RR21_Rahimova_2017'
+      23   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   'RR22_Rahimova_2017'
+      24   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   'RR23_Rahimova_2017'
+      25   1/0     1/0     1/0     1/0     1/0     2/0     2/0     2/0     2/0     2/0   'RR24_Rahimova_2017'
+      26   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   'RR25_Rahimova_2017'
+      27   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   'RR26_Rahimova_2017'
+      28   1/0     1/0     1/0     1/0     1/0     2/0     2/0     2/0     2/0     2/0   'RR27_Rahimova_2017'
+      29   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   'RR28_Rahimova_2017'
+
+# of processed structures in "montpellier_ligands_ligprep-1.sdf" : 36
+# of dropped structures in "montpellier_ligands_ligprep-1-dropped.smi" : 0
+
+backend run time: 0 hours 0 minutes 55.927 seconds
+--------------------------------------------------------------------------------
+SUBJOB: montpellier_ligands_ligprep-2
+
+
+--------------------------------------------------------------------------------
+JobId          : galba-0-69e5fd5b
+Name           : montpellier_ligands_ligprep-2
+Program        : LigPrep
+Version        : 2025-3 build 160
+Host           : galba.lacdr.leidenuniv.nl
+Dir            : /var/tmp/s2004267/montpellier_ligands_ligprep
+HostEntry      : localhost
+JobHost        : galba.lacdr.leidenuniv.nl
+JobDir         : /usr/tmp/s2004267/montpellier_ligands_ligprep-2
+JobSchrodinger : /zfsdata/software/schrodinger/2025-3
+Commandline    : /zfsdata/software/schrodinger/2025-3/ligprep -retain ic -ma 500 -bff 16 -epik -s 1 -t 1 -ph 7.4 -pht 0.2 -orig_file montpellier_ligands.smi -orig_file_index 30 -ismi in_montpellier_ligands_ligprep-2.smi -osd montpellier_ligands_ligprep-2.sdf -HOST localhost
+StartTime      : 2026-04-20-12:18:03
+--------------------------------------------------------------------------------
+WARNING: Will not retain stereochemistry because -ac is not specified.
+LigPrep (version 75160). Copyright Schrodinger, LLC. All rights reserved.
+
+LigPrep command:
+$SCHRODINGER/ligprep -retain ic -ma 500 -bff 16 -epik -s 1 -t 1 -ph 7.4 -pht 0.2 -orig_file montpellier_ligands.smi -orig_file_index 30 -ismi in_montpellier_ligands_ligprep-2.smi -osd montpellier_ligands_ligprep-2.sdf
+
+Processing steps:
+$DO.smiconvert_in -orig_file_index 29 -orig_file montpellier_ligands.smi -max_atom 500 in_montpellier_ligands_ligprep-2.smi
+$DO.sdstereoexpander -add_hydrogens -max_output 1 -max_generated 32 <infile.mae> <outfile.mae>
+$DO.htreat -t All-None -a all -s -l 500 <infile.mae> <outfile.mae>
+$DO.desalter <infile.mae> <outfile.mae>
+$DO.neutralizer -retain_lab -m 500 <infile.mae> <outfile.mae>
+$DO.guard <infile.mae> <outfile.mae>
+$DO.epik.py -pht 0.2 -ph 7.4 -retain_i_lab -retain_t_lab -tn 1 -ma 500 -imae <infile.mae> -omae <outfile.mae>
+$DO.stereoizer -label_specified_chiralities -n 1 <infile.mae> <outfile.mae>
+$DO.lp_noredund <infile.mae> <outfile.mae>
+$DO.cgx -optimize -ffld 16 -epsilon 10.0 <infile.mae> <outfile.mae>
+$DO.filterstereo -max_stereo 1 <infile.mae> <outfile.mae>
+
+DO=$SCHRODINGER/run python3 -m schrodinger.application.macromodel.packages.ligprep3
+
+# counts of output and dropped structures after processing steps
+# index  sdstex  htreat  desalt  neutra   guard   epik   stereo  redund    cgx   filter  title
+      30   1/0     1/0     1/0     2/0     2/0     3/0     3/0     2/0     2/0     2/0   'RR29_Rahimova_2017'
+Adding general crowding pattern: count 1
+number of matches for crowding type: deprotonated_amide_ortho_to_aromatic_nX2: abs type: 1,3,4-Thiadiazoline: 1
+Adding general crowding pattern: count 1
+number of matches for crowding type: deprotonated_amide_ortho_to_aromatic_nX2: abs type: 1,3,4-Thiadiazoline: 1
+      31   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   'RR30_Rahimova_2017'
+      32   1/0     1/0     1/0     2/0     2/0     2/0     2/0     1/0     1/0     1/0   'RR31_Rahimova_2017'
+      33   1/0     1/0     1/0     1/0     1/0     3/0     3/0     3/0     3/0     3/0   'RR32_Rahimova_2017'
+      34   1/0     1/0     1/0     1/0     1/0     2/0     2/0     2/0     2/0     2/0   'RR33_Rahimova_2017'
+      35   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '1a_Ghoteimi_2023'
+      36   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '1b_Ghoteimi_2023'
+      37   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '1c_Ghoteimi_2023'
+      38   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '1d_Ghoteimi_2023'
+      39   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '1aa_Ghoteimi_2023'
+      40   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '2a_Ghoteimi_2023'
+      41   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '2b_Ghoteimi_2023'
+      42   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '2c_Ghoteimi_2023'
+      43   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '2d_Ghoteimi_2023'
+      44   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '2aa_Ghoteimi_2023'
+      45   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '8a_Ghoteimi_2023'
+      46   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '8b_Ghoteimi_2023'
+      47   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '8c_Ghoteimi_2023'
+      48   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '8d_Ghoteimi_2023'
+      49   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '9a_Ghoteimi_2023'
+      50   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '9b_Ghoteimi_2023'
+      51   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '9c_Ghoteimi_2023'
+      52   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '9d_Ghoteimi_2023'
+      53   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '1a_Grossjean_2025'
+      54   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '1b_Grossjean_2025'
+      55   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '1c_Grossjean_2025'
+      56   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '1d_Grossjean_2025'
+      57   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '1e_Grossjean_2025'
+      58   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '1f_Grossjean_2025'
+
+# of processed structures in "montpellier_ligands_ligprep-2.sdf" : 33
+# of dropped structures in "montpellier_ligands_ligprep-2-dropped.smi" : 0
+
+backend run time: 0 hours 0 minutes 31.961 seconds
+--------------------------------------------------------------------------------
+SUBJOB: montpellier_ligands_ligprep-3
+
+
+--------------------------------------------------------------------------------
+JobId          : galba-0-69e5fd5c
+Name           : montpellier_ligands_ligprep-3
+Program        : LigPrep
+Version        : 2025-3 build 160
+Host           : galba.lacdr.leidenuniv.nl
+Dir            : /var/tmp/s2004267/montpellier_ligands_ligprep
+HostEntry      : localhost
+JobHost        : galba.lacdr.leidenuniv.nl
+JobDir         : /usr/tmp/s2004267/montpellier_ligands_ligprep-3
+JobSchrodinger : /zfsdata/software/schrodinger/2025-3
+Commandline    : /zfsdata/software/schrodinger/2025-3/ligprep -retain ic -ma 500 -bff 16 -epik -s 1 -t 1 -ph 7.4 -pht 0.2 -orig_file montpellier_ligands.smi -orig_file_index 59 -ismi in_montpellier_ligands_ligprep-3.smi -osd montpellier_ligands_ligprep-3.sdf -HOST localhost
+StartTime      : 2026-04-20-12:18:04
+--------------------------------------------------------------------------------
+WARNING: Will not retain stereochemistry because -ac is not specified.
+LigPrep (version 75160). Copyright Schrodinger, LLC. All rights reserved.
+
+LigPrep command:
+$SCHRODINGER/ligprep -retain ic -ma 500 -bff 16 -epik -s 1 -t 1 -ph 7.4 -pht 0.2 -orig_file montpellier_ligands.smi -orig_file_index 59 -ismi in_montpellier_ligands_ligprep-3.smi -osd montpellier_ligands_ligprep-3.sdf
+
+Processing steps:
+$DO.smiconvert_in -orig_file_index 58 -orig_file montpellier_ligands.smi -max_atom 500 in_montpellier_ligands_ligprep-3.smi
+$DO.sdstereoexpander -add_hydrogens -max_output 1 -max_generated 32 <infile.mae> <outfile.mae>
+$DO.htreat -t All-None -a all -s -l 500 <infile.mae> <outfile.mae>
+$DO.desalter <infile.mae> <outfile.mae>
+$DO.neutralizer -retain_lab -m 500 <infile.mae> <outfile.mae>
+$DO.guard <infile.mae> <outfile.mae>
+$DO.epik.py -pht 0.2 -ph 7.4 -retain_i_lab -retain_t_lab -tn 1 -ma 500 -imae <infile.mae> -omae <outfile.mae>
+$DO.stereoizer -label_specified_chiralities -n 1 <infile.mae> <outfile.mae>
+$DO.lp_noredund <infile.mae> <outfile.mae>
+$DO.cgx -optimize -ffld 16 -epsilon 10.0 <infile.mae> <outfile.mae>
+$DO.filterstereo -max_stereo 1 <infile.mae> <outfile.mae>
+
+DO=$SCHRODINGER/run python3 -m schrodinger.application.macromodel.packages.ligprep3
+
+# counts of output and dropped structures after processing steps
+# index  sdstex  htreat  desalt  neutra   guard   epik   stereo  redund    cgx   filter  title
+      59   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '1g_Grossjean_2025'
+      60   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '1h_Grossjean_2025'
+      61   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '1i_Grossjean_2025'
+      62   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '1j_Grossjean_2025'
+      63   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '1k_Grossjean_2025'
+      64   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '1l_Grossjean_2025'
+      65   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '1m_Grossjean_2025'
+      66   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '1n_Grossjean_2025'
+      67   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '1o_Grossjean_2025'
+      68   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '1p_Grossjean_2025'
+      69   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '1q_Grossjean_2025'
+      70   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '2a_Grossjean_2025'
+      71   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '2b_Grossjean_2025'
+      72   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '2c_Grossjean_2025'
+      73   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '2d_Grossjean_2025'
+      74   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '2e_Grossjean_2025'
+      75   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '2f_Grossjean_2025'
+      76   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '2g_Grossjean_2025'
+      77   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '2h_Grossjean_2025'
+      78   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '2i_Grossjean_2025'
+      79   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '2j_Grossjean_2025'
+      80   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '2k_Grossjean_2025'
+      81   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '3bc_Grossjean_2025'
+      82   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '3bd_Grossjean_2025'
+      83   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '3be_Grossjean_2025'
+      84   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '3bf_Grossjean_2025'
+      85   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '3bg_Grossjean_2025'
+      86   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '3bk_Grossjean_2025'
+      87   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '3aa_Grossjean_2025'
+
+# of processed structures in "montpellier_ligands_ligprep-3.sdf" : 29
+# of dropped structures in "montpellier_ligands_ligprep-3-dropped.smi" : 0
+
+backend run time: 0 hours 0 minutes 15.230 seconds
+--------------------------------------------------------------------------------
+SUBJOB: montpellier_ligands_ligprep-4
+
+
+--------------------------------------------------------------------------------
+JobId          : galba-0-69e5fd5e
+Name           : montpellier_ligands_ligprep-4
+Program        : LigPrep
+Version        : 2025-3 build 160
+Host           : galba.lacdr.leidenuniv.nl
+Dir            : /var/tmp/s2004267/montpellier_ligands_ligprep
+HostEntry      : localhost
+JobHost        : galba.lacdr.leidenuniv.nl
+JobDir         : /usr/tmp/s2004267/montpellier_ligands_ligprep-4
+JobSchrodinger : /zfsdata/software/schrodinger/2025-3
+Commandline    : /zfsdata/software/schrodinger/2025-3/ligprep -retain ic -ma 500 -bff 16 -epik -s 1 -t 1 -ph 7.4 -pht 0.2 -orig_file montpellier_ligands.smi -orig_file_index 88 -ismi in_montpellier_ligands_ligprep-4.smi -osd montpellier_ligands_ligprep-4.sdf -HOST localhost
+StartTime      : 2026-04-20-12:18:06
+--------------------------------------------------------------------------------
+WARNING: Will not retain stereochemistry because -ac is not specified.
+LigPrep (version 75160). Copyright Schrodinger, LLC. All rights reserved.
+
+LigPrep command:
+$SCHRODINGER/ligprep -retain ic -ma 500 -bff 16 -epik -s 1 -t 1 -ph 7.4 -pht 0.2 -orig_file montpellier_ligands.smi -orig_file_index 88 -ismi in_montpellier_ligands_ligprep-4.smi -osd montpellier_ligands_ligprep-4.sdf
+
+Processing steps:
+$DO.smiconvert_in -orig_file_index 87 -orig_file montpellier_ligands.smi -max_atom 500 in_montpellier_ligands_ligprep-4.smi
+$DO.sdstereoexpander -add_hydrogens -max_output 1 -max_generated 32 <infile.mae> <outfile.mae>
+$DO.htreat -t All-None -a all -s -l 500 <infile.mae> <outfile.mae>
+$DO.desalter <infile.mae> <outfile.mae>
+$DO.neutralizer -retain_lab -m 500 <infile.mae> <outfile.mae>
+$DO.guard <infile.mae> <outfile.mae>
+$DO.epik.py -pht 0.2 -ph 7.4 -retain_i_lab -retain_t_lab -tn 1 -ma 500 -imae <infile.mae> -omae <outfile.mae>
+$DO.stereoizer -label_specified_chiralities -n 1 <infile.mae> <outfile.mae>
+$DO.lp_noredund <infile.mae> <outfile.mae>
+$DO.cgx -optimize -ffld 16 -epsilon 10.0 <infile.mae> <outfile.mae>
+$DO.filterstereo -max_stereo 1 <infile.mae> <outfile.mae>
+
+DO=$SCHRODINGER/run python3 -m schrodinger.application.macromodel.packages.ligprep3
+
+# counts of output and dropped structures after processing steps
+# index  sdstex  htreat  desalt  neutra   guard   epik   stereo  redund    cgx   filter  title
+      88   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '3ab_Grossjean_2025'
+      89   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '3ac_Grossjean_2025'
+      90   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '3ad_Grossjean_2025'
+      91   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '3af_Grossjean_2025'
+      92   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '3ag_Grossjean_2025'
+      93   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '3ai_Grossjean_2025'
+      94   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '3aj_Grossjean_2025'
+      95   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '3ak_Grossjean_2025'
+      96   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '3ca_Grossjean_2025'
+      97   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '3cb_Grossjean_2025'
+      98   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '3ch_Grossjean_2025'
+      99   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '3ce_Grossjean_2025'
+     100   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '3cj_Grossjean_2025'
+     101   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '3ci_Grossjean_2025'
+     102   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '3ck_Grossjean_2025'
+     103   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4aa_Grossjean_2025'
+     104   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4ab_Grossjean_2025'
+     105   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4ac_Grossjean_2025'
+     106   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4ad_Grossjean_2025'
+     107   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4ae_Grossjean_2025'
+     108   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4af_Grossjean_2025'
+     109   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4ag_Grossjean_2025'
+     110   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4ah_Grossjean_2025'
+     111   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4ai_Grossjean_2025'
+     112   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4aj_Grossjean_2025'
+     113   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4ak_Grossjean_2025'
+     114   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4al_Grossjean_2025'
+     115   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4ba_Grossjean_2025'
+     116   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4bb_Grossjean_2025'
+
+# of processed structures in "montpellier_ligands_ligprep-4.sdf" : 29
+# of dropped structures in "montpellier_ligands_ligprep-4-dropped.smi" : 0
+
+backend run time: 0 hours 0 minutes 16.058 seconds
+--------------------------------------------------------------------------------
+SUBJOB: montpellier_ligands_ligprep-5
+
+
+--------------------------------------------------------------------------------
+JobId          : galba-0-69e5fd5f
+Name           : montpellier_ligands_ligprep-5
+Program        : LigPrep
+Version        : 2025-3 build 160
+Host           : galba.lacdr.leidenuniv.nl
+Dir            : /var/tmp/s2004267/montpellier_ligands_ligprep
+HostEntry      : localhost
+JobHost        : galba.lacdr.leidenuniv.nl
+JobDir         : /usr/tmp/s2004267/montpellier_ligands_ligprep-5
+JobSchrodinger : /zfsdata/software/schrodinger/2025-3
+Commandline    : /zfsdata/software/schrodinger/2025-3/ligprep -retain ic -ma 500 -bff 16 -epik -s 1 -t 1 -ph 7.4 -pht 0.2 -orig_file montpellier_ligands.smi -orig_file_index 117 -ismi in_montpellier_ligands_ligprep-5.smi -osd montpellier_ligands_ligprep-5.sdf -HOST localhost
+StartTime      : 2026-04-20-12:18:07
+--------------------------------------------------------------------------------
+WARNING: Will not retain stereochemistry because -ac is not specified.
+LigPrep (version 75160). Copyright Schrodinger, LLC. All rights reserved.
+
+LigPrep command:
+$SCHRODINGER/ligprep -retain ic -ma 500 -bff 16 -epik -s 1 -t 1 -ph 7.4 -pht 0.2 -orig_file montpellier_ligands.smi -orig_file_index 117 -ismi in_montpellier_ligands_ligprep-5.smi -osd montpellier_ligands_ligprep-5.sdf
+
+Processing steps:
+$DO.smiconvert_in -orig_file_index 116 -orig_file montpellier_ligands.smi -max_atom 500 in_montpellier_ligands_ligprep-5.smi
+$DO.sdstereoexpander -add_hydrogens -max_output 1 -max_generated 32 <infile.mae> <outfile.mae>
+$DO.htreat -t All-None -a all -s -l 500 <infile.mae> <outfile.mae>
+$DO.desalter <infile.mae> <outfile.mae>
+$DO.neutralizer -retain_lab -m 500 <infile.mae> <outfile.mae>
+$DO.guard <infile.mae> <outfile.mae>
+$DO.epik.py -pht 0.2 -ph 7.4 -retain_i_lab -retain_t_lab -tn 1 -ma 500 -imae <infile.mae> -omae <outfile.mae>
+$DO.stereoizer -label_specified_chiralities -n 1 <infile.mae> <outfile.mae>
+$DO.lp_noredund <infile.mae> <outfile.mae>
+$DO.cgx -optimize -ffld 16 -epsilon 10.0 <infile.mae> <outfile.mae>
+$DO.filterstereo -max_stereo 1 <infile.mae> <outfile.mae>
+
+DO=$SCHRODINGER/run python3 -m schrodinger.application.macromodel.packages.ligprep3
+
+# counts of output and dropped structures after processing steps
+# index  sdstex  htreat  desalt  neutra   guard   epik   stereo  redund    cgx   filter  title
+     117   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4bc_Grossjean_2025'
+     118   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4bd_Grossjean_2025'
+     119   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4be_Grossjean_2025'
+     120   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4bf_Grossjean_2025'
+     121   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4bg_Grossjean_2025'
+     122   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4bh_Grossjean_2025'
+     123   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4bi_Grossjean_2025'
+     124   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4bj_Grossjean_2025'
+     125   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4bk_Grossjean_2025'
+     126   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4dd_Grossjean_2025'
+     127   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4dg_Grossjean_2025'
+     128   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4dj_Grossjean_2025'
+     129   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4ea_Grossjean_2025'
+     130   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4eb_Grossjean_2025'
+     131   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4ca_Grossjean_2025'
+     132   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4cb_Grossjean_2025'
+     133   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4cc_Grossjean_2025'
+     134   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4cd_Grossjean_2025'
+     135   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4ce_Grossjean_2025'
+     136   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4cf_Grossjean_2025'
+     137   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4cg_Grossjean_2025'
+     138   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4ch_Grossjean_2025'
+     139   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4ci_Grossjean_2025'
+     140   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4cj_Grossjean_2025'
+     141   1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0     1/0   '4ck_Grossjean_2025'
+
+# of processed structures in "montpellier_ligands_ligprep-5.sdf" : 25
+# of dropped structures in "montpellier_ligands_ligprep-5-dropped.smi" : 0
+
+backend run time: 0 hours 0 minutes 15.888 seconds
+--------------------------------------------------------------------------------
+
+# of processed structures in "montpellier_ligands_ligprep.sdf" : 152
+# of dropped structures in "montpellier_ligands_ligprep-dropped.smi" : 0
+
+total run time: 0 hours 1 minutes 6.769 seconds
