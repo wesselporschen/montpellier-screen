@@ -3,23 +3,25 @@ from rdkit import Chem
 import pandas as pd 
 import os
 
+def extract_actives_inactives_sdf(labels_csv: str, 
+                                  sdf_file: str,
+                                  active_sdf: str,
+                                  inactive_sdf: str) -> None:
 
+    print(f"Extracting true active and inactive sdfs")
+    print(f"{labels_csv=}")
+    print(f"{sdf_file=}")
+    print(f"{active_sdf=}")
+    print(f"{inactive_sdf=}")
 
-def extract_actives_inactives_sdf():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("labels_csv")
-    parser.add_argument("sdf_file")
-
-    args = parser.parse_args()
-
-    labels = pd.read_csv(args.labels_csv)
+    labels = pd.read_csv(labels_csv)
     labels_dict = dict(zip(labels["ID"], labels["ACTIVE_LABEL"]))
 
     # Input / output files
 
-    supplier = Chem.SDMolSupplier(args.sdf_file)
-    active_writer = Chem.SDWriter("true_actives.sdf")
-    inactive_writer = Chem.SDWriter("true_inactives.sdf")
+    supplier = Chem.SDMolSupplier(sdf_file)
+    active_writer = Chem.SDWriter(active_sdf)
+    inactive_writer = Chem.SDWriter(inactive_sdf)
 
     n_active = 0
     n_inactive = 0
@@ -49,3 +51,38 @@ def extract_actives_inactives_sdf():
     print(f"Actives: {n_active}")
     print(f"Inactives: {n_inactive}")
     print(f"Missing labels: {n_missing}")
+
+
+CWD = os.getcwd()
+dirs = os.listdir()
+dockdirs = [dir for dir in dirs if "Jun" in dir]
+
+for dockdir in dockdirs:
+    os.chdir(f"{CWD}/{dockdir}")
+    
+    subdirs = os.listdir()
+    conformerdirs = [dir for dir in subdirs if "_dimer_sdf" in dir]
+    
+    for conformerdir in conformerdirs:
+        os.chdir(f"{CWD}/{dockdir}/{conformerdir}")
+
+        print(f"Directory: {dockdir} {conformerdir}")
+
+        # find montpellier sdf 
+        montpellier_matches = [f for f in os.listdir(".") if f.endswith("montpellier.sdf")]
+        montpellier_sdf = montpellier_matches[0]
+
+        # set active and inactive sdf outputs 
+        conformerbase = conformerdir.replace("_sdf", "")
+        active_sdf = f"{conformerbase}_true_actives.sdf"
+        inactive_sdf = f"{conformerbase}_true_inactives.sdf"
+        
+        #print(montpellier_sdf, active_sdf, inactive_sdf)
+
+        extract_actives_inactives_sdf(labels_csv='/Users/wes/Documents/bps/RP2/cd73_dualantagonist/docking/montpellier-screen/results/montpellier_ligands.csv',
+                                      sdf_file=montpellier_sdf,
+                                      active_sdf=active_sdf,
+                                      inactive_sdf=inactive_sdf)
+
+
+
