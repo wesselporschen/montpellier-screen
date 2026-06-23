@@ -6,5 +6,6 @@ results/12Jun_rg_10poses/*.db
 results/12Jun_g543/*.db
 results/16Jun_rg2/*.db
 results/16Jun_rg3/*.db
-prolif_fps/
 temp/
+~$AUC_stats.xlsx
+.DS_Store
