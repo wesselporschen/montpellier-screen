@@ -54,10 +54,12 @@ def process_sdf_files(ligand_sdf, protein_conformer) -> pd.DataFrame:
 
 
 processed = {
-    # "12Jun_g543",
-    # "12Jun_rg",
-    # "5Jun_dimer",
+    "12Jun_g543",
+    "12Jun_rg",
     "12Jun_rg10poses",
+    "16Jun_rg2",
+    "16Jun_rg3",
+    "5Jun_dimer",
 }
 
 
