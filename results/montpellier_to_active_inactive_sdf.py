@@ -53,16 +53,22 @@ def extract_actives_inactives_sdf(labels_csv: str,
     print(f"Missing labels: {n_missing}")
 
 
+
+# CONFIG ------
+
 CWD = os.getcwd()
 dirs = os.listdir()
-dockdirs = [dir for dir in dirs if "Jun" in dir]
+# Change to dockdirs that need to be done, otherwise every docking run dir gets processed again
+#dockdirs = [dir for dir in dirs if "Jun" in dir]
+dockdirs = ['23Jun_g543_3', '23Jun_g543_2']
+print(f"{dockdirs=}")
 
 for dockdir in dockdirs:
     os.chdir(f"{CWD}/{dockdir}")
-    
+
     subdirs = os.listdir()
     conformerdirs = [dir for dir in subdirs if "_dimer_sdf" in dir]
-    
+
     for conformerdir in conformerdirs:
         os.chdir(f"{CWD}/{dockdir}/{conformerdir}")
 
@@ -76,7 +82,7 @@ for dockdir in dockdirs:
         conformerbase = conformerdir.replace("_sdf", "")
         active_sdf = f"{conformerbase}_true_actives.sdf"
         inactive_sdf = f"{conformerbase}_true_inactives.sdf"
-        
+
         #print(montpellier_sdf, active_sdf, inactive_sdf)
 
         extract_actives_inactives_sdf(labels_csv='/Users/wes/Documents/bps/RP2/cd73_dualantagonist/docking/montpellier-screen/results/montpellier_ligands.csv',
