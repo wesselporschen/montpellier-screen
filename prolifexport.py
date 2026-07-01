@@ -41,6 +41,15 @@ protein_conformers = {
 
 # Generate pandas dataframe of interaction fingerprints for sdf file and protein conformer
 def process_sdf_files(ligand_sdf, protein_conformer) -> pd.DataFrame:
+    # Read molecules from the SDF
+    rdkit_mols = [mol for mol in Chem.SDMolSupplier(ligand_sdf) if mol is not None]
+
+    # Extract ligand IDs (first line of each SDF record)
+    ligand_ids = [
+        mol.GetProp("_Name") if mol.HasProp("_Name") else None
+        for mol in rdkit_mols
+    ]
+
     fp_ligands = plf.sdf_supplier(ligand_sdf)
     protein = plf.Molecule(Chem.MolFromPDBFile(protein_conformer))
 
@@ -48,18 +57,21 @@ def process_sdf_files(ligand_sdf, protein_conformer) -> pd.DataFrame:
     interaction_fingerprint.run_from_iterable(fp_ligands, protein)
 
     df = interaction_fingerprint.to_dataframe()
+    df.insert(0, "LigandID", ligand_ids)
     return df
 
 
 
 
-processed = {
-    "12Jun_g543",
+runs_to_process = {
+    #"12Jun_g543",
     "12Jun_rg",
-    "12Jun_rg10poses",
-    "16Jun_rg2",
-    "16Jun_rg3",
-    "5Jun_dimer",
+    # "12Jun_rg10poses",
+    # "16Jun_rg2",
+    # "16Jun_rg3",
+    # "5Jun_dimer",
+    "23Jun_g543_2",
+    "23Jun_g543_3",
 }
 
 
@@ -80,7 +92,7 @@ if __name__ == "__main__":
 
     for docking_run_key, conformers in sdf_data.items():
 
-        if docking_run_key in processed:
+        if docking_run_key not in runs_to_process:
             print(f"Already processed docking run {docking_run_key}. Skipping.")
             continue
 
